@@ -240,13 +240,6 @@ pip install numpy matplotlib
 
 # How to Run
 
-## Run Main Simulation
-
-```bash
-python main.py
-```
-
----
 
 ## Run Animated Demo
 
@@ -319,5 +312,5 @@ This project investigates RIS-assisted communication enhancement for smart facto
 ---
 
 # Author
-
+Harsh Modi and Swayam Kotecha IIIT Bangalore
 Developed as part of a study on RIS-assisted Industrial IoT communication systems and smart factory wireless reliability.
