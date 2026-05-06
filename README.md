@@ -35,21 +35,16 @@ The factory layout is modeled in 2D and includes realistic blockage effects caus
 
 ## Wireless Channel Modeling
 
-The project implements:
+The simulation framework includes:
 
-### Large-Scale Path Loss
+* Distance-dependent path loss
+* Rician fading
+* Industrial shadowing
+* RIS-assisted reflected communication links
+* Multi-RIS deployment
+* Monte Carlo channel simulation
 
-Distance-dependent path loss:
-
-[
-L(d) = C_0 d^{-\alpha}
-]
-
-where:
-
-* (d) = propagation distance
-* (\alpha) = path loss exponent
-* (C_0) = reference path loss constant
+Detailed mathematical derivations and expressions used in the project are provided separately in the accompanying Expressions PDF.
 
 ---
 
@@ -90,31 +85,17 @@ This creates:
 
 ## RIS-Assisted Communication
 
-The RIS is modeled as a passive reflective surface consisting of:
-
-[
-N = 64
-]
-
-reflecting elements.
-
-The RIS creates an additional communication path:
-
-[
-\text{AP} \rightarrow \text{RIS} \rightarrow \text{User}
-]
-
-The reflected signal gain is modeled using coherent combining:
-
-[
-|h_{RIS}|^2 \propto N^2
-]
+The RIS is modeled as a passive reflective surface consisting of multiple programmable reflecting elements.
 
 The simulation supports:
 
 * Single RIS deployment
 * Multi-RIS deployment
 * RIS-assisted coverage enhancement
+* Cascaded AP → RIS → User communication links
+* Coherent reflected signal combining
+
+Detailed RIS mathematical modeling and derivations are included in the Expressions PDF.
 
 ---
 
@@ -140,41 +121,32 @@ These plots visualize:
 
 ## 2. Robot Trajectory SNR
 
-A mobile robot moves through the factory.
+A mobile robot moves through the factory while the simulation continuously evaluates wireless connectivity along the trajectory.
 
-The simulation computes:
-
-[
-SNR(x(t), y(t))
-]
-
-along the robot path.
-
-This demonstrates:
+The trajectory analysis demonstrates:
 
 * Signal degradation behind machinery
 * RIS-assisted connectivity recovery
 * Reliability improvement for AGVs
+* Dynamic coverage variation across the factory
+
+Detailed mathematical formulations are included in the Expressions PDF.
 
 ---
 
 ## 3. Coverage Probability Analysis
 
-Coverage probability is computed using:
+The project evaluates wireless coverage reliability across the factory floor.
 
-[
-P(SNR > \gamma_{th})
-]
+Coverage analysis compares:
 
-where:
+* No RIS deployment
+* Single RIS deployment
+* Multi-RIS deployment
 
-* (\gamma_{th}) = outage threshold
+The simulation computes coverage probability and outage behavior under different deployment configurations.
 
-The project compares:
-
-* No RIS
-* Single RIS
-* Multi-RIS
+Detailed equations and derivations are available in the Expressions PDF.
 
 ---
 
@@ -240,6 +212,13 @@ pip install numpy matplotlib
 
 # How to Run
 
+## Run Main Simulation
+
+```bash
+python main.py
+```
+
+---
 
 ## Run Animated Demo
 
@@ -312,5 +291,7 @@ This project investigates RIS-assisted communication enhancement for smart facto
 ---
 
 # Author
-Harsh Modi and Swayam Kotecha IIIT Bangalore
+
 Developed as part of a study on RIS-assisted Industrial IoT communication systems and smart factory wireless reliability.
+Harsh Modi IMT2023607
+Swayam Kotecha IMT2023615
