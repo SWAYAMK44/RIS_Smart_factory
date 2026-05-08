@@ -117,23 +117,31 @@ The project generates:
 
 ## 1. SNR Heatmaps
 
-Heatmaps showing signal quality across the factory floor:
+Heatmaps showing signal quality across the factory floor under three deployment scenarios:
 
-* Without RIS
-* With 1 RIS
-* With 2 RISs
+### No RIS
+![No RIS Heatmap](images/NORIS.png)
+
+### Single RIS
+![One RIS Heatmap](images/ONERIS.png)
+
+### Two RIS Panels
+![Two RIS Heatmap](images/TWORIS.png)
 
 These plots visualize:
 
-* Dead coverage zones
-* Shadowing regions
-* Coverage improvement due to RIS
+* Dead coverage zones created by metallic machinery
+* Shadowing regions with severe signal degradation
+* Progressive coverage improvement with each additional RIS panel
 
 ---
 
 ## 2. Robot Trajectory SNR
 
 A mobile robot moves through the factory while the simulation continuously evaluates wireless connectivity along the trajectory.
+
+### SNR vs Robot Position
+![SNR vs Robot Position](images/SNRvsRobotPos.png)
 
 The trajectory analysis demonstrates:
 
@@ -168,38 +176,29 @@ Detailed equations and derivations are available in the Expressions PDF.
 images/
 ├── factory_setup.png
 ├── snr_heatmap.png
+├── NORIS.png
+├── ONERIS.png
+├── TWORIS.png
+└── SNRvsRobotPos.png
 ```
-
-Add your generated figures inside the `images/` folder using the filenames above.
 
 ---
 
 ```text
 .
-├── main.py
 ├── demo.py
 ├── README.md
 ```
 
 ---
 
-# Files
+# How to Run
 
-## main.py
+## Run Animated Demo
 
-Runs the complete RIS simulation framework:
-
-* Heatmaps
-* Monte Carlo simulations
-* Rician fading analysis
-* Robot trajectory SNR
-* Coverage probability analysis
-
----
-
-## demo.py
-
-Runs the animated demonstration.
+```bash
+python demo.py
+```
 
 The demo visualizes:
 
@@ -207,12 +206,6 @@ The demo visualizes:
 * Signal propagation paths
 * RIS-assisted reflected paths
 * Live SNR updates
-
-### To run the demo:
-
-```bash
-python demo.py
-```
 
 This animation is useful for:
 
@@ -232,29 +225,11 @@ pip install numpy matplotlib
 
 ---
 
-# How to Run
-
-## Run Main Simulation
-
-```bash
-python main.py
-```
-
----
-
-## Run Animated Demo
-
-```bash
-python demo.py
-```
-
----
-
 # Example Results
 
 The simulation produces:
 
-* SNR heatmaps
+* SNR heatmaps (No RIS / One RIS / Two RIS)
 * Coverage maps
 * Outage contours
 * Robot trajectory SNR plots
