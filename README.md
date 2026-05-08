@@ -1,5 +1,17 @@
 # RIS-Assisted Smart Factory Communication Simulation
 
+## Factory Setup
+
+![Factory Setup](images/factory_setup.png)
+
+---
+
+## SNR Heatmap Example
+
+![SNR Heatmap](images/snr_heatmap.png)
+
+---
+
 ## Overview
 
 This project demonstrates the use of **Reconfigurable Intelligent Surfaces (RIS)** to improve wireless communication reliability in a smart factory environment.
@@ -153,6 +165,16 @@ Detailed equations and derivations are available in the Expressions PDF.
 # Project Structure
 
 ```text
+images/
+├── factory_setup.png
+├── snr_heatmap.png
+```
+
+Add your generated figures inside the `images/` folder using the filenames above.
+
+---
+
+```text
 .
 ├── main.py
 ├── demo.py
@@ -293,5 +315,3 @@ This project investigates RIS-assisted communication enhancement for smart facto
 # Author
 
 Developed as part of a study on RIS-assisted Industrial IoT communication systems and smart factory wireless reliability.
-Harsh Modi IMT2023607
-Swayam Kotecha IMT2023615
