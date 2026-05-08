@@ -2,7 +2,7 @@
 
 ## Factory Setup
 
-![Factory Setup](images/factory_setup.png)
+![Factory Setup](images/FactorySetup.png)
 
 ---
 
