@@ -6,11 +6,6 @@
 
 ---
 
-## SNR Heatmap Example
-
-![SNR Heatmap](images/snr_heatmap.png)
-
----
 
 ## Overview
 
