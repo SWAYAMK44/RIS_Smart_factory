@@ -169,8 +169,7 @@ Detailed equations and derivations are available in the Expressions PDF.
 
 ```text
 images/
-├── factory_setup.png
-├── snr_heatmap.png
+├── FactorySetup.png
 ├── NORIS.png
 ├── ONERIS.png
 ├── TWORIS.png
