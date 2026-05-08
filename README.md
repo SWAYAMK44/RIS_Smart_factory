@@ -282,5 +282,7 @@ This project investigates RIS-assisted communication enhancement for smart facto
 ---
 
 # Author
-
-Developed as part of a study on RIS-assisted Industrial IoT communication systems and smart factory wireless reliability.
+Harsh Modi IMT2023607
+Swayam Kotecha IMT2023615
+IIIT Bangalore
+Developed as part of a Reading Elective under Prof Jyotsana Bapat and under the guidence of Sasirekha ma'am
